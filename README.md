@@ -1,27 +1,44 @@
-# TakeHomeTestLakshmi
+### Objective
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
+Using TypeScript and Angular, your assignment is to implement a responsive patient search form and get it looking as close to the design as possible.
 
-## Development server
+### Brief
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The design team at Essilor has provided you with designs for a new patient search form! Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design to work to. You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-## Code scaffolding
+### Tasks
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+-   Implement assignment using:
+  -   Language: **TypeScript**
+  -   Framework: **Angular 11**
+-   Your users should be able to:
+    -   View the optimal layout for the site depending on their device's screen size
+    -   Receive an error message when the `form` is submitted if:
+        -   Any `input` field is empty. The message for this error should say _"[Field Name] cannot be empty"_
+        -   No special characters should be included in the name. The message for this error should say _"[Field Name] cannot contain any special characters"_
+        -   The patient search form should include:
+    -   View the current searched tags and remove them to reset the search form.
+-   You will find all the required assets in the `/images` folder. The assets are already optimized.
+-   There is also a `style-guide.md` file, containing the information you'll need, such as color palette and fonts.
 
-## Build
+### Evaluation Criteria
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+-   **TypeScript** best practices
+-   Show us your work through your commit history
+-   We're looking for you to produce working code, with enough room to demonstrate how to structure components in a small program
+-   Completeness: did you complete the features?
+-   Correctness: does the functionality act in sensible, thought-out ways?
+-   Maintainability: is it written in a clean, maintainable way?
+-   Testing: is the system adequately tested?
 
-## Running unit tests
+### Deliverables
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Make sure to include all source code in the repository.
 
-## Running end-to-end tests
+### Essilor
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Please organize, design, test and document your code as if it were going into production - then push your changes to the master branch. After you have pushed your code, email your Essilor contact.
 
-## Further help
+All the best and happy coding,
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The Essilor Team
