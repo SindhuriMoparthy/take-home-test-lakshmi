@@ -1,0 +1,62 @@
+.title {
+    margin-top: 7rem;
+    margin-left: 2rem;
+}
+
+.form-group {
+    margin-top : 2rem;
+    margin-left: 15rem;
+    width: 13rem;
+}
+
+.current {
+    position:relative;
+    left: 11.4rem
+}
+
+.error {
+    color: red;
+}
+
+.button {
+    position: relative;
+    left: 30rem;
+    bottom: 3.6rem;
+}
+
+::ng-deep .mat-form-field-underline {
+    display: none;
+}
+
+.searchresults {
+    position: relative;
+    left: 15rem;
+    background-color: aliceblue;
+    width: 170px;
+}
+
+@media only screen and (max-width : 768px) {
+    .button {
+        position: relative;
+        left: 8rem;
+        bottom: 0rem;
+    }
+    .current{
+        position: relative;
+        top: 3rem;
+        left: 4.5rem;
+    }
+    .logo {
+    width: 6.25rem;
+    height: 6.25rem;
+    position: relative;
+    top: 3rem;
+    left: 2rem;
+    }
+    .form-group {
+        margin-left:8rem;
+    }
+    .title {
+        margin-top:6rem;
+    }
+}

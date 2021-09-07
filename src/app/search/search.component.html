@@ -1,0 +1,32 @@
+<div>
+    <div style = "display:flex"><img class = "logo" src = "../../assets/images/Essilor_Logo_SMDM_Framed_RGB_200.png">
+        <h1 class = "title">Patient Search</h1>
+    </div>
+    <div class = "content">
+        <form [formGroup]="searchForm">  
+            <div class="form-group">
+            <label>Search by patient</label><br>
+            <input #searchInput type="search" formControlName="search" [(ngModel)]="searchText" name="search" required>
+            <div class="error" *ngIf="f.search.errors && f.search.errors.required">FieldName cannot be empty</div>
+            <div class="error" *ngIf="f.search.errors && f.search.errors.pattern">No Special Characters</div>
+            </div>
+            <div class="searchresults">
+            <span *ngFor="let item of searchData | filter: searchText">
+                {{ item }} <br></span></div>
+            <button class="button" (click) = "search(searchInput.value)" [disabled]="!searchForm.valid">Search</button>
+            <mat-form-field>
+               <span class = "current"> Current Searches</span>  <mat-chip-list #chipList>
+                  <mat-chip class="current" *ngFor="let detail of selectedValue" [selectable]="selectable" (click)="select(detail)"
+                           [removable]="removable" (removed)="remove(detail)">
+                    {{detail}}
+                    <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                  </mat-chip>
+                </mat-chip-list>
+              </mat-form-field>
+            <!-- <mat-chip *ngFor = "let detail of selectedValue" [selectable]="selectable" [removable]="removable" (removed)="remove(selectedValue)">{{ detail }}
+                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+            </mat-chip> -->
+        </form>
+    </div>
+    
+</div>
